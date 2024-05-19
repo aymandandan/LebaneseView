@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link href="style.css" rel="stylesheet" type="text/css"></link>
+    <script src="script.js" type="text/javascript"></script>
+    <link rel="icon" href="pictures/pngwing.com.png" type="image/png">
+</head>
+<body>
+    <!--Header Section-->
+    <header id="header">
+        <div class="qoute Eng">"Lebanon, a land where history whispers through ancient ruins and the spirit of hospitality dances in the warm embrace of its people."</div>
+        <div class="qoute Arab">".لبنان، الأرض التي يهمس فيها التاريخ عبر الآثار القديمة وتتراقص روح الضيافة في أحضان شعبه الدافئة"</div>
+    </header>
+
+    <!--Description At the start-->
+    <div class="intro-discription-sec">
+        <div class="logo">
+            <div class="globe-logo"><img src="pictures/world-icon-png-3011.png" alt=""></div>
+            <div class="plane-logo"><img src="pictures/airplane-png-27942.png" alt=""></div>
+        </div>
+        <div class="intro-discription">
+            <h2 class="Arab">لبنان</h2>
+            <h2 class="Eng">Lebanon</h2>
+            <p class="Arab" style="text-align: right;">
+                لبنان بلد ذات طبيعة ساحرة وتاريخ غني، ويعتبر وجهة سياحية شهيرة في الشرق الأوسط. تتميز السياحة في لبنان بتنوعها الكبير، حيث يمكن للزوار الاستمتاع بالشواطئ الرملية والمناظر الجميلة للبحر الأبيض المتوسط ، وزيارة الجبال الجميلة في الأطلس والقادسية. كما يضم لبنان العديد من المواقع الأثرية والتاريخية، مثل مدينة بيروت القديمة ، ومعبد باعلبك الروماني ، وقلعة صيدا البحرية. تتوفر العديد من النشاطات الرياضية والترفيهية في لبنان، بما في ذلك التزلج في منتجعات الأرز الشهيرة ، والمشي في الطبيعة الخلابة، والتسوق في الأسواق التقليدية والمراكز التجارية الحديثة. بالإضافة إلى ذلك، تتمتع لبنان بثقافة متنوعة ومطبخ لذيذ يجذب الزوار من جميع أنحاء العالم.
+            </p>
+            <p class="Eng">
+                Lebanon is a country with a charming nature, rich maps, and a famous tourist destination in the Middle East. Tourism in Lebanon is characterized by its diversity, as you can enjoy beautiful beaches, beautiful views of the Mediterranean Sea, and a beautiful visit to the Atlas and Qadisiyah. It also includes many of Lebanon's archaeological and historical sites, such as the Old City of Beirut, the Roman Temple of Baalbek, and the Sidon Sea Castle. Lebanon features many modern sports activities, including sports activities at the famous Rice Resorts, nature walks, and shopping at entertainment centers. In addition, enjoying a diverse Lebanese culture that is attractive to visitors from all over the world.
+            </p>
+        </div>
+        <div class="lang-selector">
+            <div class="lang-icon"><img src="pictures/globe-language-svgrepo-com.svg" alt="Language"></div>
+            <div class="lang" id="Arabic" onclick="langSwitch('Arab')"><img src="pictures/lebanon-flag-icon.svg" alt="Arabic"></div>
+            <div class="lang" id="English" onclick="langSwitch('Eng')"><img src="pictures/united-kingdom-flag-icon.svg" alt="English"></div>
+        </div>
+    </div>
+
+    <!--Moving Plane Animation-->
+    <div class="animation-sec">
+        <div class="plane"><img src="pictures/kisspng-airplane-computer-icons-aircraft-aviation-flight-cropped-plane-icon-png-the-wanderful-me-5cc07bff26a098.6754993915561185271582.png" alt=""></div>
+    </div>
+
+    <!--Central Section-->
+    <div id="main">
+
+        <!--Globe and Word Animation-->
+        <div id="extra-sec">
+            <div class="globe-contain">
+                <img src="pictures/globe-13429.png" alt="">
+                <div class="lebanon-container"><p>LEBANON</p></div>
+            </div>
+        </div>
+
+        <!--Place Selection Map-->
+        <div class="map-sec">
+            <img src="pictures/lebanon-shaded-relief-map-cutted.jpg" alt="Lebanon Map Here">
+            <div class="place c1" id="c1" onclick="resetAllBut(1)">
+                <div class="placeName Arab">طرابلس</div>
+                <div class="placeName Eng">Tripoli</div>
+            </div>
+            <div class="place c2" id="c2" onclick="resetAllBut(2)">
+                <div class="placeName Arab">بشري</div>
+                <div class="placeName Eng">Bsharri</div>
+            </div>
+            <div class="place c3" id="c3" onclick="resetAllBut(3)">
+                <div class="placeName Arab">البترون</div>
+                <div class="placeName Eng">Batroun</div>
+            </div>
+            <div class="place c4" id="c4" onclick="resetAllBut(4)">
+                <div class="placeName Arab">جبيل</div>
+                <div class="placeName Eng">Byblos</div>
+            </div>
+            <div class="place c5" id="c5" onclick="resetAllBut(5)">
+                <div class="placeName Arab">جونية</div>
+                <div class="placeName Eng">Jounieh</div>
+            </div>
+            <div class="place c6" id="c6" onclick="resetAllBut(6)">
+                <div class="placeName Arab">بيروت</div>
+                <div class="placeName Eng">Beirut</div>
+            </div>
+            <div class="place c7" id="c7" onclick="resetAllBut(7)">
+                <div class="placeName Arab">صيدا</div>
+                <div class="placeName Eng">Sidon</div>
+            </div>
+            <div class="place c8" id="c8" onclick="resetAllBut(8)">
+                <div class="placeName Arab">صور</div>
+                <div class="placeName Eng">Tyre</div>
+            </div>
+            <div class="place c9" id="c9" onclick="resetAllBut(9)">
+                <div class="placeName Arab">بعلبك</div>
+                <div class="placeName Eng">Baalbek</div>
+            </div>
+            <div class="place c10" id="c10" onclick="resetAllBut(10)">
+                <div class="placeName Arab">البقاع</div>
+                <div class="placeName Eng">Bekaa</div>
+            </div>
+            <div class="place c11" id="c11" onclick="resetAllBut(11)">
+                <div class="placeName Arab">زحلة</div>
+                <div class="placeName Eng">Zahle</div>
+            </div>
+            <div class="place c12" id="c12" onclick="resetAllBut(12)">
+                <div class="placeName Arab">جزين</div>
+                <div class="placeName Eng">Jezzine</div>
+            </div>
+        </div>
+
+        <!--Information about each place-->
+        <section id="info-sec">
+            <div id="info-defualt">
+                <p class="Arab">انقر على مكان لإظهار معلوماته</p>
+                <p class="Eng">Click on a place to show its Info</p>
+            </div>
+            <div class="info" id="info1">
+                <div class="blur"></div>
+                <div class="content">
+                    <div class="img-container">
+                        <img src="pictures/طرابلس.jpeg" alt="Telefrique" class="placePic">
+                        <img src="pictures/طرابس2.jpeg" alt="Telefrique" class="placePic">
+                        
+                    </div>
+                
+                    <p class="placeInfo Arab">
+                        <strong>طرابلس</strong><br>السياحة في طرابلس متنوعة لحد كبير، حيث يوجد بها أهم المواقع الأثرية، وأجمل المناظر الطبيعية، المتمثلة في الغابات، والجبال، والجزر، والمحميات الطبيعية، والشواطئ. كذلك لا تفوت المرور على أسواقها العريقة، وتذوق حلوياتها الشهية، والتعرف على حرفها اليدوية، فهناك الكثير من الفاعليات الممتعة داخل طرابلس التي تبتعد عن العاصمة بيروت، بحوالي 85 كم إلى الشمال، وتبعد عن الحدود السورية بحوالي 40 كم. والآن لنبدأ جولتنا في التعرف على المناطق السياحية في طرابلس العتيقة..
+                    </p>
+                    <p class="placeInfo Eng">
+                        <strong>Tripoli</strong><br>Tourism in Tripoli is very diverse, as it has the most important archaeological sites and the most beautiful natural landscapes, represented by forests, mountains, islands, natural reserves, and beaches. Also, do not miss visiting its ancient markets, tasting its delicious sweets, and learning about its handicrafts, as there are many fun activities inside Tripoli, which is about 85 km away from the capital, Beirut, to the north, and about 40 km away from the Syrian border. Now let us begin our tour of getting to know the tourist areas in ancient Tripoli.
+                    </p>
+                    <div class="buttons-container">
+                        <a target="_blank" class="link" id="linkButton1" href="">
+                            <div class="linkButton">
+                                <p class="linkText Arab">احجز مكان</p>
+                                <p class="linkText Eng">Book a place</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="info" id="info2">
+                <div class="blur"></div>
+                <div class="content">
+                    <div class="img-container">
+                        <img src="pictures/بشري.jpeg" alt="Telefrique" class="placePic">
+                        <img src="pictures/بشري2.jpeg" alt="Telefrique" class="placePic">
+                        <img src="pictures/بشري3.jpeg" alt="Telefrique" class="placePic">
+                    
+                    </div>
+                    <p class="placeInfo Arab">
+                        <strong>بشري</strong><br>تقع بشري على حدود وادي قديشا في محافظة الشمال في لبنان، وتعود كلمة بشري في الأساس للغة الفينيقية والتي تعني "منزل عشتار"؛ وهي إحدى الآلهة التي كان الفينيقيون يعبدونها فيما مضى. تعد هذه البلدة مسقط رأس الشاعر والرسام والنحات الشهير خليل جبران الذي يمتلك الآن متحفًا في المدينة لتكريمه، كما يأوي الموقع القريب لوادي قاديشا المقدس بعض أقدم المجتمعات الرهبانية المسيحية في الشرق الأوسط؛ فهي تعد تراثًا حقيقيًا للمسيحية المارونية. لجأ المسيحيون الموارنة الهاربون من الاضطهاد إلى تضاريسها الجبلية في القرن السابع الميلادي، ومن ثم أصبح وادي قاديشا المركز الروحي للكنيسة المارونية. يتميز سكان بشري بأنهم شجعان وقبليون وهم معروفون بشكل خاص بلهجتهم المميزة عندما يتحدثون العربية اللبنانية..
+                    </p>
+                    <p class="placeInfo Eng">
+                        <strong>Bsharri</strong><br>Bsharri is located on the border of Wadi Qadisha in the North Governorate in Lebanon. The word Bsharri originally goes back to the Phoenician language, which means “Ishtar’s house.” She is one of the gods that the Phoenicians worshiped in the past. This town is the birthplace of the famous poet, painter, and sculptor Khalil Gibran, who now has a museum in the city to honor him. The nearby site of the sacred Qadisha Valley also houses some of the oldest Christian monastic communities in the Middle East; It is considered a true heritage of Maronite Christianity. Maronite Christians fleeing persecution took refuge in its mountainous terrain in the seventh century AD, and the Kadisha Valley subsequently became the spiritual center of the Maronite Church. The people of Bsharri are brave and tribal and are particularly known for their distinctive dialect when they speak Lebanese Arabic.
+                    </p>
+                    <div class="buttons-container">
+                        <a target="_blank" class="link" id="linkButton2" href="">
+                            <div class="linkButton">
+                                <p class="linkText Arab">احجز مكان</p>
+                                <p class="linkText Eng">Book a place</p>
+                            </div>
+                        </a>
+                    </div>                
+                </div>
+            </div>
+            <div class="info" id="info3">
+                <div class="blur"></div>
+                <div class="content">
+                    <div class="img-container">
+                        <img src="pictures/بترون.jpg" alt="Telefrique" class="placePic">
+                        <img src="pictures/بترون2.jpg" alt="Telefrique" class="placePic">
+                        <img src="pictures/Batroun-11.jpg" alt="Telefrique" class="placePic">
+                    
+                    </div>
+                    <p class="placeInfo Arab">
+                        <strong>بترون</strong><br>تعتبر “البترون” واحدة من أقدم المدن التاريخية والسياحية في العالم والتي يعود سكانها الى حوالي خمسة آلاف سنة الى الوراء، فهي مدينة ساحلية وتقع في شمال “لبنان” وتبعد حوالي 50 كيلومتر عن العاصمة “بيروت”، كما تبعد حوالي 30 كيلومتر عن غرب مدينة طرابلس. تقوم مدينة البترون بنشاطات ترفيهية وفنيّة في فصل الصيف، وفي عام 2009م أقيم لأول مرة “مهرجان البترون الدولي”، وبدأ بإستضافة فنانين محليين ودوليين في شهر تموز وآب من كل عام، وذلك في منطقة الميناء القديمة في البترون
+                    </p>
+                    <p class="placeInfo Eng">
+                        <strong>Batroun</strong><br>“Batroun” is considered one of the oldest historical and tourist cities in the world, and its population dates back about five thousand years. It is a coastal city located in northern Lebanon, about 50 kilometers from the capital, Beirut, and about 30 kilometers west of the Tripoli city.The city of Batroun carries out entertainment and artistic activities in the summer. In 2009, the “Batroun International Festival” was held for the first time, and began hosting local and international artists in July and August of each year, in the old port area in Batroun.
+                    </p>
+                    <div class="buttons-container">
+                        <a target="_blank" class="link" id="linkButton3" href="">
+                            <div class="linkButton">
+                                <p class="linkText Arab">احجز مكان</p>
+                                <p class="linkText Eng">Book a place</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="info" id="info4">
+                <div class="blur"></div>
+                <div class="content">
+                    <div class="img-container">
+                        <img src="pictures/جبيل.jpeg" alt="Telefrique" class="placePic">
+                        <img src="pictures/جبيل2.jpeg" alt="Telefrique" class="placePic">
+                        <img src="pictures/جبيل3.jpeg" alt="Telefrique" class="placePic">
+                    
+                    </div>
+                    <p class="placeInfo Arab">
+                        <strong>جبيل</strong><br>بينما يقول المؤرخون إن الصيادين هم من بنوا المدينة قرب الشاطئ، تقول الأسطورة التي استمد منها اسم المدينة إن الإله إيل -كبير الآلهة عند الكنعانيين- هو من أسسها حيث وفرة الينابيع، فكانت تسمية جبيل اختصارا لـ"جب إيل" أي نبع الإله إيل. يعود تاريخ مدينة جبيل إلى أكثر من ثمانية آلاف سنة، ويعتقد مؤرخون أن مدينة جبيل اللبنانية هي أول مدينة في العالم ما زالت مأهولة بالسكان منذ ثمانية آلاف سنة.
+                    </p>
+                    <p class="placeInfo Eng">
+                        <strong>Byblos</strong><br>While historians say that fishermen were the ones who built the city near the coast, the legend from which the city's name was derived says that the god El - the chief god of the Canaanites - was the one who founded it, where springs were abundant, so the name Byblos was an abbreviation of "Geb El", meaning the spring of the god El. The history of the city of Byblos dates back more than eight thousand years, and historians believe that the Lebanese city of Byblos is the first city in the world that has been inhabited for eight thousand years.
+                    </p>
+                    <div class="buttons-container">
+                        <a target="_blank" class="link" id="linkButton4" href="">
+                            <div class="linkButton">
+                                <p class="linkText Arab">احجز مكان</p>
+                                <p class="linkText Eng">Book a place</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="info" id="info5">
+                <div class="blur"></div>
+                <div class="content">
+                    <div class="img-container">
+                        <img src="pictures/telefrique-cable-car-harissa-jounieh-lebanon-top-attractions-lebanon-tours.jpg" alt="Telefrique" class="placePic">
+                        <img src="pictures/جونية1.jpeg" alt="Telefrique" class="placePic">
+                    </div>
+                    <p class="placeInfo Arab">
+                        <strong>جونية</strong><br>تلفريك جونية أو تلفريك لبنان بالنسبة للسياح الأجانب من أشهر معالم جبل لبنان ويبلغ ارتفاعه عند أعلى نقطة له 550 متر بينما يبلغ طوله 1570 متر ويصل بين خليج جونيه ومنطقة حريصا ويعتبر من أجمل الأماكن السياحية في جبل لبنان وبدأت فكرة إنشاء تلفريك جونيه من قبل بعض الشبان الذين كانوا يقومون برحلة مدرسية إلى مزار سيدة لبنان وحلموا بإنشاء وسيلة تنقل زوار هذه المنطقة بشكل مباشر من جونية إلى حريصا وبدأت بعدها عملية إنشاء التلفريك من قبل الحكومة وافتتح بشكل رسمي في عام 1965 ليصبح من أهم الواجهات السياحية في البلاد. ويبعد 16 كلم إلى الشمال من بيروت..
+                    </p>
+                    <p class="placeInfo Eng">
+                        <strong>Jounieh</strong><br>The Jounieh cable car, or the Lebanon cable car for foreign tourists, is one of the most famous landmarks of Mount Lebanon. Its height at its highest point is 550 meters, while its length is 1,570 meters. It connects the Bay of Jounieh and the Harissa area. It is considered one of the most beautiful tourist places in Mount Lebanon. The idea of ​​establishing the Jounieh cable car began by some young men who They were taking a school trip to the Shrine of Our Lady of Lebanon and dreamed of creating a means to transport visitors to this region directly from Jounieh to Harissa. After that, the process of constructing the cable car began by the government and it was officially opened in 1965 to become one of the most important tourist destinations in the country. It is 16 km north of Beirut.
+                    </p>
+                    <div class="buttons-container">
+                        <a target="_blank" class="link" id="linkButton5" href="">
+                            <div class="linkButton">
+                                <p class="linkText Arab">احجز مكان</p>
+                                <p class="linkText Eng">Book a place</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="info" id="info6">
+                <div class="blur"></div>
+                <div class="content">
+                    <div class="img-container">
+                        <img src="pictures/لاغ1.jpeg" alt="Telefrique" class="placePic">
+                        <img src="pictures/بي2.jpeg" alt="Telefrique" class="placePic">
+                    </div>
+                    <p class="placeInfo Arab">
+                        <strong>بيروت</strong><br>. الروشة يطلق عليها كذلك، صخرة الحمام، أو صخرة صباح نصار، 
+                        أو صخرة الحب. تعد صخور الطيور الواقعة بمنطقة الروشة من أجمل الاماكن الطبيعية في لبنان لتقف وسط بحر بيروت الغربي كالحارس العملاق
+                        يقع ساحل زيتونة على الساحل الشمالي لمدينة بيروت، ويعد من مناطق بيروت الراقية والممتعة إلى أقصى حد. الوصول إلى خليج زيتونة يعتبر بداية رحلة رائعة من الجمال، 
+                        والطبيعة، والسمر، والتسوق، والرحلات البحرية المشوقة    
+                    </p>
+                    <p class="placeInfo Eng">
+                        <strong>Beirut</strong><br>Raouche is also called Pigeon Rock, Sabah Nassar Rock, or Love Rock. The Bird Rocks located in the Raouche area are considered one of the most beautiful natural places in Lebanon. They stand in the middle of the Western Beirut Sea like a giant sentinel. The Zaytouna Coast is located on the northern coast of the city of Beirut, and it is considered one of the most upscale and enjoyable areas of Beirut. Arriving at Zaytouna Bay is the beginning of a wonderful journey of beauty, nature, summer, shopping, and exciting cruises.
+                    </p>
+                    <div class="buttons-container">
+                        <a target="_blank" class="link" id="linkButton6" href="">
+                            <div class="linkButton">
+                                <p class="linkText Arab">احجز مكان</p>
+                                <p class="linkText Eng">Book a place</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="info" id="info7">
+                <div class="blur"></div>
+                <div class="content">
+                    <div class="img-container">
+                        <img src="pictures/صيدا1.jpg" alt="Telefrique" class="placePic">
+                        <img src="pictures/صيدا2.jpeg" alt="Telefrique" class="placePic">
+                    
+                    
+                    </div>
+                    <p class="placeInfo Arab">
+                        <strong>صيدا</strong><br>
+                        قلعة صيدا
+                        هذا المكان الاستراتيجي مر عليه عدة قوات من الفينيقيين حتى منظمة التحرير الفلسطينية في السبعينيات، وكيف ضربات صواريخ الكيان الصهيوني أدّت إلى حمايتها في قائمة اليونسكو. ‬
+                        تشرف على البحر ، بل هي داخل البحر ، تقف شامخة منذ زمن بعيد ، فيها ابداع هندسي رائع ، و نستطيع التجول فيها بكل 
+                        حرية ، له رسم دخول بسيط ، و يوجد فيها أعمال صيانه ، ومع ذلك تستقبل الزوار.
+                    </p>
+                    <p class="placeInfo Eng">
+                        <strong>Sidon</strong><br>Sidon Castle: This strategic place was visited by several forces, from the Phoenicians until the Palestine Liberation Organization in the seventies, and how the Zionist entity’s missile strikes led to its protection on the UNESCO list. It overlooks the sea, in fact it is inside the sea. It has been standing tall for a long time. It contains wonderful engineering creativity, and we can wander around it freely. It has a small entrance fee, and there is maintenance work in it, and yet it receives visitors.
+                    </p>
+                    <div class="buttons-container">
+                        <a target="_blank" class="link" id="linkButton7" href="">
+                            <div class="linkButton">
+                                <p class="linkText Arab">احجز مكان</p>
+                                <p class="linkText Eng">Book a place</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="info" id="info8">
+                <div class="blur"></div>
+                <div class="content">
+                    <div class="img-container">
+                        <img src="pictures/3b9d6d98-bf4d-4e18-bfc5-c846cc671dbd_sm.jpg" alt="atharat" class="placePic">
+                        <img src="pictures/de38a3be-40e8-4a61-b55b-c0d4ea95ceec_lg.jpg" alt="atharat" class="placePic">
+                        <img src="pictures/امواج البياضة.jpg" alt="atharat" class="placePic">
+                    </div>
+                    <p class="placeInfo Arab">
+                        <strong>صور</strong><br>تعد مدينة صور واحدة من أقدم المدن المأهولة بالسكان في العالم، وقد كانت أحد أقدم العواصم الفينيقية القديمة، ويطلق عليها اسم سيّدة البحار. تطل هذه المدينة التاريخية على البحر الأبيض المتوسط، و تمتلئ بالمعالم الأثرية الرومانية العظيمة. يقوم الكثير من السياح القادمين من مختلف المناطق بزيارتها وذلك نظراً لكونها مليئة بعوامل الجذب السياحي, حيث سيجد السياح فيها الكثير من المرافق التي تجعل من زيارتهم لهذه المدينة رحلة لا تنسى؛ ففيها الشواطئ الخلابة والمتاحف التاريخية والفنية والمواقع الأثرية كميدان سباق الخيول الروماني, بالإضافة إلى مراكز التسوّق الحديثة التي تجمع بين المتعة والترفيه والموضة والطعام اللذيذ والفنادق والمنتجعات السياحية المميزة
+                    </p>
+                    <p class="placeInfo Eng">
+                        <strong>Tyre</strong><br>The city of Tyre is one of the oldest inhabited cities in the world. It was one of the oldest ancient Phoenician capitals, and it is called the Lady of the Seas. This historic city overlooks the Mediterranean Sea, and is filled with great Roman monuments. Many tourists coming from different regions visit it because it is full of tourist attractions, as tourists will find many facilities that make their visit to this city an unforgettable trip. It has picturesque beaches, historical and artistic museums, and archaeological sites such as the Roman horse racing field, in addition to modern shopping centers that combine fun, entertainment, fashion, delicious food, and distinctive hotels and tourist resorts.
+                    </p>
+                    <div class="buttons-container">
+                        <a target="_blank" class="link" id="linkButton8" href="">
+                            <div class="linkButton">
+                                <p class="linkText Arab">احجز مكان</p>
+                                <p class="linkText Eng">Book a place</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="info" id="info9">
+                <div class="blur"></div>
+                <div class="content">
+                    <div class="img-container">
+                        
+                        <img src="pictures/بعلبك1.jpeg" alt="Telefrique" class="placePic">
+                        <img src="pictures/بعلبك2.jpeg" alt="Telefrique" class="placePic">
+                        <img src="pictures/بعلبك3.jpeg" alt="Telefrique" class="placePic">
+                    
+                    </div>
+                    <p class="placeInfo Arab">
+                        <strong>بعلبك</strong><br>مدينة بعلبك اللبنانية، مدينة الشمس، واحدة من أهم مدن لبنان السياحية، مدينة تراثية، كما يجب أن يكون التراث؛ فجذورها ضاربة في عمق التاريخ.
+                        السياحة في بعلبكموقعها الاستراتيجي كمنطقة عبور، ومفترق طرق للقوافل قديماً، بين شمال سوريا، وشمال فلسطين من جهة، وبين البر الشامي، وساحل البحر المتوسط من جهة أخرى؛ جعلها مستقراً للكثير من الحضارات المتعاقبة، والتي خلفت وراءها معالم أثرية، وتاريخية فريدة من نوعها. يزيد من جمال مدينة بعلبك أيضاً؛ وقوعها في وسط سهل البقاع بمساحاته الخضراء الشاسعة، التي يتخللها نهر الليطاني..
+                    </p>
+                    <p class="placeInfo Eng">
+                        <strong>Baalbak</strong><br>The Lebanese city of Baalbek, the city of the sun, one of the most important tourist cities in Lebanon, a heritage city, as heritage should be; Its roots go deep into history. Tourism in Baalbek: Its strategic location as a transit area and a crossroads for caravans in the past, between northern Syria and northern Palestine on the one hand, and between the Levantine mainland and the Mediterranean coast on the other hand. It made it stable for many successive civilizations, which left behind unique archaeological and historical monuments. It also increases the beauty of the city of Baalbek. It is located in the middle of the Bekaa Valley with its vast green areas, interspersed with the Litani River.
+                    </p>
+                    <div class="buttons-container">
+                        <a target="_blank" class="link" id="linkButton9" href="">
+                            <div class="linkButton">
+                                <p class="linkText Arab">احجز مكان</p>
+                                <p class="linkText Eng">Book a place</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="info" id="info10">
+                <div class="blur"></div>
+                <div class="content">
+                    <div class="img-container">
+                        <img src="pictures/البقاع.jpeg" alt="Telefrique" class="placePic">
+                        <img src="pictures/البقاع2.jpeg" alt="Telefrique" class="placePic">
+                        <img src="pictures/البقاع3.jpeg" alt="Telefrique" class="placePic">
+                    </div>
+                    <p class="placeInfo Arab">
+                        <strong>البقاع</strong><br>البقاع, إحدى محافظات لبنان, وهي سهل واسع ينبسط بين سلسلتي جبال لبنان الشرقية والغربية, وتتميز أراضيه بأنها خصبة ويجري فيها أكبر نهرين في لبنان: الليطاني والعاصي ولذلك شكلت هذه المنطقة خلال القرون السابقة خزان بلاد الشام من الحبوب والخضار والفاكه. يشكل سهل البقاع ممراً إلزامياً بين شمالي سوريا وفلسطين حيث كانت تعبره قديماً القوافل حيناً والغزاة تارةً أخرى. أما اليوم، فإنه يعتبر أكبر مساحة زراعية في لبنان تنتشر فيه المزارع والقرى والحقول وكروم العنب التي تغطي السهل بوشاح متعدد الألوان، وغالباً ما تسدّ طريقك الجرارات الزراعية التي تحصد الشمندر السكري، والرعاة الذين يقودون قطعان الخراف والماعز على جانبي الدرب، والأفضل أن تحمل دائماً بيدك آلة تصوير لالتقاط المناظر المدهشة التي تفاجئك عند المنعطفات..
+                    </p>
+                    <p class="placeInfo Eng">
+                        <strong>Bekaa</strong><br>The Bekaa, one of Lebanon's governorates, is a wide plain extending between the eastern and western Lebanese mountain ranges. Its lands are fertile and the two largest rivers in Lebanon flow through it: the Litani and the Orontes. Therefore, during the previous centuries, this region formed the Levant's reservoir of grains, vegetables, and fruits. The Bekaa Valley constitutes an obligatory corridor between northern Syria and Palestine, as it was crossed by caravans at times and invaders at other times. Today, it is considered the largest agricultural area in Lebanon, dotted with farms, villages, fields, and vineyards that cover the plain with a multi-colored scarf. Your path is often blocked by agricultural tractors that harvest sugar beets, and shepherds who lead herds of sheep and goats on both sides of the path. It is best to always carry in your hand. A camera to capture the amazing views that surprise you around the corners.
+                    </p>
+                    <div class="buttons-container">
+                        <a target="_blank" class="link" id="linkButton10" href="">
+                            <div class="linkButton">
+                                <p class="linkText Arab">احجز مكان</p>
+                                <p class="linkText Eng">Book a place</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="info" id="info11">
+                <div class="blur"></div>
+                <div class="content">
+                    <div class="img-container">
+                        
+                        <img src="pictures/زحلة1.jpeg" alt="Telefrique" class="placePic">
+                        <img src="pictures/زحلة2.jpeg" alt="Telefrique" class="placePic">
+                        <img src="pictures/زحلة3.jpeg" alt="Telefrique" class="placePic">
+                    
+                    </div>
+                    <p class="placeInfo Arab">
+                        <strong>زحلة</strong><br>مدينة زحلة هي واحدة من أكبر المدن اللٌبنانية, وأكثرها تِعداداً من حيث عدد السكان، وهي أيضاً تتمتع بموقع جغرافي استراتيجي مميّز, فيحدّها من الجهة الشماليّة جبل صنين ومن الجهة الجنوبية سهل البقاع, ويمر بها نهرُ البردوني الذي يقسِمها إلى نصفين متساويين تقريباً, وتتمتع المدينة أيضاً بجو معتدل على مدار العام وبمناطق خٌضرية وأراضٍ خصبة مما يجعل من الزراعة أحد أكثر الأنشطة التي يقوم بها السكان فيها. وللمدينة تاريخٌ عريق, فقد شهدت وعاصرت العديد من الشعوب والقبائل الذين تركوا فيها معالم أثرية لا تزال قائمة حتى يومنا هذا, مثل مستشفى جمال باشا الذي يعود بناؤه لعام 1914م، والأسواق القديمة كسوق البلاط الذي يعود بناؤه لعام 1888م..
+                    </p>
+                    <p class="placeInfo Eng">
+                        <strong>Zahle</strong><br>The city of Zahle is one of the largest and most populous Lebanese cities, and it also enjoys a distinct strategic geographical location. It is bordered on the northern side by Mount Sannine and on the southern side by the Bekaa Valley. The Berdouni River passes through it, which divides it into approximately two equal halves. The city also enjoys... With a moderate climate throughout the year, green areas and fertile lands, which makes agriculture one of the most common activities carried out by its residents. The city has a long history, as it witnessed and lived with many peoples and tribes who left archaeological monuments in it that still exist to this day, such as the Jamal Pasha Hospital, which was built in 1914 AD, and old markets such as the Balat Market, which was built in 1888 AD.
+                    </p>
+                    <div class="buttons-container">
+                        <a target="_blank" class="link" id="linkButton11" href="">
+                            <div class="linkButton">
+                                <p class="linkText Arab">احجز مكان</p>
+                                <p class="linkText Eng">Book a place</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="info" id="info12">
+                <div class="blur"></div>
+                <div class="content">
+                    <div class="img-container">
+                        <img src="pictures/جزين.jpg" alt="Telefrique" class="placePic">
+                        <img src="pictures/جزين2.jpg" alt="Telefrique" class="placePic">
+                        <img src="pictures/جزين3.jpg" alt="Telefrique" class="placePic">
+                    </div>
+                    <p class="placeInfo Arab">
+                        <strong>جزين</strong><br>
+                        1-تعتبر جزين من المناطق اللبنانية النموذجية والتي بالرغم من الحداثة ما زالت تحافظ على طابعها التقليدي المتمثل ببيوتها الحجرية ذات السطوح القرميدية الحمراء، وأزقتها الضيقة التي يمكنك التنقل فيها على الأدراج. 
+                        <br>2-تعتبر شلالات جزين رمزًا للمدينة والتي تعرف محليًا بالشالوف. فلقد أكسبت هذه الشلالات جزين  لقب "عروس للشلال". تعتبرهذه الشلالات خامس أعلى شلال في العالم، اذ تنحدر على علو 80 م، وهي تشرف على غابة بكاسين الصنوبرية.
+                        <br>3- هو قصر خاص بالراحل الدكتور فريد سرحال. بالرغم من أنه لم ينته من بنائه، فيشكل هذا القصر تحفة فنية وهندسية فريدة. فيتميز القصر بهندسته المعمارية اذ يمزج ما بين النمط الهندسي والتزييني. وهو يتألف من عدة غرف واسعة تعلوها القناطر المزخرفة والنوافذ الملونة اضافة الى نوافير المياه. 
+                    </p>
+                    <p class="placeInfo Eng">
+                        <strong>Jezzine</strong><br>
+                        1- Jezzine is considered one of the typical Lebanese areas, which, despite modernity, still maintains its traditional character represented by its stone houses with red tiled roofs, and its narrow alleys that you can move through on stairs.
+                        <br>2-Jezzine Waterfalls are considered a symbol of the city and are known locally as Shalouf. These waterfalls earned Jezzine the title “Bride of the Waterfall.” These waterfalls are considered the fifth highest waterfall in the world, descending to a height of 80 metres, and they overlook the Bkassine conifer forest.
+                        <br>3- It is a palace belonging to the late Dr. Farid Sarhal. Although its construction was not finished, this palace constitutes a unique artistic and engineering masterpiece. The palace is distinguished by its architecture, as it combines geometric and decorative styles. It consists of several spacious rooms topped with decorative arches, colorful windows, and water fountains.
+                    </p>
+                    <div class="buttons-container">
+                        <a target="_blank" class="link" id="linkButton12" href="">
+                            <div class="linkButton">
+                                <p class="linkText Arab">احجز مكان</p>
+                                <p class="linkText Eng">Book a place</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+
+    <!--Mving Plane Animation-->
+    <div class="animation-sec">
+        <div class="plane"><img src="pictures/kisspng-airplane-computer-icons-aircraft-aviation-flight-cropped-plane-icon-png-the-wanderful-me-5cc07bff26a098.6754993915561185271582.png" alt=""></div>
+    </div>
+
+    <!--Footer Section-->
+    <footer>
+        <div id="contacts-area">
+            <h3> <hr>Contact Us </h3>
+            <div id="person1">
+                <div id="email1">sokainaattieh@gmail.com</div>
+                <div id="phone1">+961-81/892547</div>
+            </div>
+            <div id="person2">
+                <div id="email2">aymandandan24680@gmail.com</div>
+                <div id="phone2">+961-76/975850</div>
+            </div>
+        </div>
+        <div id="feedback-source">
+            <div id="feedback">
+                <h3 class="feedback-logo Arab">ارسل لنا تعليقاتك</h3>
+                <h3 class="feedback-logo Eng">Send Us Your Feedback</h3>
+                <form action="">
+                    <textarea name="feedback" class="feedback-text Eng" cols="50" rows="5" placeholder="Your feedback..." spellcheck="false"></textarea>
+                    <textarea name="feedback" class="feedback-text Arab" cols="50" rows="5" placeholder="...تعليقاتك" spellcheck="false" style="text-align: right;"></textarea>
+                </form>
+                <div class="feedback-button">Submit</div>
+            </div>
+            <div id="sources">
+                <div id="rights"> Copyright ©2024 | All rights are reserved.</div>
+            </div>
+        </div>
+    </footer>  
+</body>
+</html>
